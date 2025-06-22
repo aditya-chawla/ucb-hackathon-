@@ -1,0 +1,19 @@
+{
+  "name": "alm-aid",
+  "version": "1.0.0",
+  "description": "AI-powered virtual assistant for emotional support during global crises",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["ai", "virtual-assistant", "emotional-support", "crisis", "meditation"],
+  "author": "almAid Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
